@@ -1,0 +1,9 @@
+# Abaikan folder node_modules
+node_modules/
+
+# Abaikan file .env (karena biasanya berisi data sensitif)
+.env
+
+# Tambahan opsional
+.DS_Store
+*.log
