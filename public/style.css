@@ -302,6 +302,17 @@ body.is-loading .edit-btn {
   color: #155724; /* Darker text for better contrast */
 }
 
+/* Styling for links in bot messages */
+.message.bot a {
+  color: #0d6efd; /* A standard link blue, matching the send button */
+  text-decoration: underline;
+}
+
+.message.bot a:hover {
+  color: #0b5ed7; /* A darker blue on hover, matching button hover */
+  text-decoration: none;
+}
+
 /* Loading Indicator Styles */
 .message.loading-indicator {
   padding: 12px 15px;
