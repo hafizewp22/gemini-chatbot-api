@@ -196,6 +196,8 @@ function appendMessage(sender, text) {
 
     // Helper function to process inline formatting like bold, italic, and code
     const processInline = (str) => str
+      // Handle Markdown links: [text](url)
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
       .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
       .replace(/\*(.*?)\*/g, '<em>$1</em>')
       .replace(/`(.*?)`/g, (match, p1) => {
