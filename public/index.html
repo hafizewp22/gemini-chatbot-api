@@ -5,16 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gemini AI Chatbot</title>
   <link rel="stylesheet" href="style.css"/>
+  <!-- highlight.js theme (e.g., Atom One Dark) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
 </head>
 <body>
   <div class="container">
     <h1>Gemini AI Chatbot</h1>
-    <div id="chat-box" class="chat-box"></div>
+    <div id="chat-box" class="chat-box">
+      <div id="welcome-screen" class="welcome-screen">
+        <h2 class="welcome-title">Hi, Hello!</h2> 
+        <p class="welcome-subtitle">How can I help you today?</p>
+      </div>
+    </div>
     <form id="chat-form">
       <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" required />
       <button type="submit">Send</button>
     </form>
   </div>
+  <!-- highlight.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
